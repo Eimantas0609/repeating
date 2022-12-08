@@ -15,7 +15,9 @@ first: for (let i = 0; i < 3; i++) {
 	for (let j = 0; j < 3; j++) {
 		console.log(`Second level: ${j}`);
 		for (let k = 0; k < 3; k++) {
-			if (k === 2) continue first;
+			if (k === 2) {
+				continue first;
+			}
 			console.log(`Third level: ${k}`);
 		}
 	}
@@ -32,7 +34,9 @@ function firstTask() {
 
 function secondTask() {
 	for (let i = 20; i >= 10; i--) {
-		if (i === 13) break;
+		if (i === 13) {
+			break;
+		}
 		console.log(i);
 	}
 }
